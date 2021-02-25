@@ -5,7 +5,6 @@ import {ThemeProvider, Grid, Container} from "@material-ui/core";
 import './App.css';
 import CssBaseline from "@material-ui/core/CssBaseline";
 import StoryCard from './components/StoryCard';
-import LanguageSwitch from './components/LanguageSwitch';
 
 function App() {
   const [state, setState] = useState({spacing:4,width:3});
@@ -30,7 +29,7 @@ function App() {
         <Container>
           <Grid container spacing={spacing}>
             <Grid item xs={width}>
-              <StoryCard colorScheme="#ccc" title="L'ombre" date="24/02/2021" description="Lorem ipsum dolores ombrage"/>
+              <StoryCard title="L'ombre" date="24/02/2021" description="Lorem ipsum dolores ombrage" image="/easystreet.png"/>
             </Grid>
             <Grid item xs={width}>
               <StoryCard title="Obscurité" date="24/02/2021" description="Ceci est une description très intéressante sur une histoire tout aussi intéressante Ceci est une description très intéressante sur une histoire tout aussi intéressante Ceci est une description très intéressante sur une histoire tout aussi intéressante Ceci est une description très intéressante sur une histoire tout aussi intéressante Ceci est une description très intéressante sur une histoire tout aussi intéressante Ceci est une description très intéressante sur une histoire tout aussi intéressante"/>

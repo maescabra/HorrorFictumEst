@@ -4,14 +4,14 @@ import {
     CardActions, CardContent, IconButton, makeStyles
 } from '@material-ui/core';
 import { Favorite, Share } from '@material-ui/icons';
-import theme from '../theme';
+import formatimg from "../utils/formatimg";
 
 const useStyles = makeStyles(theme => ({
     link: {
         textDecoration: 'none',
     },
     bolder: {
-        fontWeight: 'bold',
+        fontWeight: '600',
     },
     actionsContainer: {
         alignItems: 'center',
@@ -32,6 +32,10 @@ const useStyles = makeStyles(theme => ({
     span: {
         height: theme.spacing(1),
         display:"block",
+    },
+    media: {
+        height: 0,
+        paddingTop: '80.25%',
     }
 }))
 
@@ -48,6 +52,8 @@ export default function StoryCard({title,image,description,date,alt,colorScheme}
         }
     }, []);
     const classes = useStyles({colorScheme,overflow});
+    const formatImage = formatimg(image);
+
     return (
         <Card className={classes.card}>
             <CardHeader
@@ -55,13 +61,14 @@ export default function StoryCard({title,image,description,date,alt,colorScheme}
                 subheader={date}
             />
             <CardMedia
+                className={classes.media}
                 image={image}
                 title={alt}
             />
             <h1>{height}</h1>
             <CardContent>
                 <div ref={descriptionContainer}>
-                <Typography className={classes.description} variant="body2" color="textPrimary" component="p">
+                <Typography className={`${classes.description} ${classes.bolder}`} variant="body2" color="textPrimary" component="p">
                     {description}
                 </Typography>
                 </div>
