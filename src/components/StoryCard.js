@@ -1,4 +1,4 @@
-import {useRef, useEffect, useState} from 'react';
+import {useEffect, useState} from 'react';
 import {
     Grid, Typography, Card, CardHeader, CardMedia,
     CardActions, CardContent, IconButton, makeStyles
@@ -25,10 +25,6 @@ const useStyles = makeStyles(theme => ({
         height: theme.spacing(10),  
         overflow: overflow?"hidden":"unset",
     }),
-    card: ({colorScheme}) => ({
-        backgroundColor: colorScheme,
-
-    }),
     span: {
         height: theme.spacing(1),
         display:"block",
@@ -39,9 +35,7 @@ const useStyles = makeStyles(theme => ({
     }
 }))
 
-export default function StoryCard({title,image,description,date,alt,colorScheme}) {
-    const descriptionContainer = useRef(null);
-    const [height,setHeight]=useState(0);
+export default function StoryCard({genre, description, title, longueur, url, image, date}) {
     
     const [overflow, setOverflow]=useState(false);
     const [isSetOverflow, setIsSetOverflow]=useState(false);
@@ -51,23 +45,25 @@ export default function StoryCard({title,image,description,date,alt,colorScheme}
             setIsSetOverflow(true);
         }
     }, []);
-    const classes = useStyles({colorScheme,overflow});
+    const classes = useStyles({overflow});
     const formatImage = formatimg(image);
 
     return (
-        <Card className={classes.card}>
+        <Card>
             <CardHeader
+                genre={genre}
                 title={title}
                 subheader={date}
+                longueur={longueur}
+                url={url}
             />
             <CardMedia
                 className={classes.media}
                 image={image}
-                title={alt}
+                title={title}
             />
-            <h1>{height}</h1>
             <CardContent>
-                <div ref={descriptionContainer}>
+                <div>
                 <Typography className={`${classes.description} ${classes.bolder}`} variant="body2" color="textPrimary" component="p">
                     {description}
                 </Typography>
