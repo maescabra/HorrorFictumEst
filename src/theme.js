@@ -1,6 +1,13 @@
 import { createMuiTheme } from '@material-ui/core/styles';
+import 'fontsource-poppins';
 
 const theme = createMuiTheme({
+  typography:{
+    fontFamily: 'Poppins',
+    button: {
+      fontWeight: 'semibold',
+    }
+  },
   palette: {
     primary: {
       // light: will be calculated from palette.primary.main,
