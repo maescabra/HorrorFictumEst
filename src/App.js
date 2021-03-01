@@ -6,6 +6,7 @@ import './App.css';
 import CssBaseline from "@material-ui/core/CssBaseline";
 import StoryCard from './components/StoryCard';
 import { psychologique, paranormal, firstperson } from './types/genres';
+import Catalog from "./components/Catalog";
 
 const storylist = [
   {
@@ -23,9 +24,9 @@ const storylist = [
 ];
 
 function App() {
-  const [state, setState] = useState({ spacing: 4, width: 3 });
+  /*const [state, setState] = useState({ spacing: 4, width: 3 });
   const { spacing, width } = state;
-  /*function handleSpacingChange(event) {
+  function handleSpacingChange(event) {
     setState({ ...state, spacing: event.target.value });
   }
   function handleWidthChange(event) {
@@ -33,7 +34,7 @@ function App() {
   }*/
   return (
     <ThemeProvider theme={theme}>
-
+      
       <CssBaseline />
       <div className="App">
         <img src={logo} className="App-logo" alt="logo" />
@@ -43,30 +44,7 @@ function App() {
         <input type="number" value={spacing} onChange={handleSpacingChange}/>
         <input type="number" style={{marginBottom:100}} value={width} onChange={handleWidthChange}/>*/}
         <Container>
-          <Grid container spacing={spacing}>
-            
-            <Grid item xs={width}>
-              <StoryCard title="Obscurité" date="24/02/2021" description="Ceci est une description très intéressante sur une histoire tout aussi intéressante Ceci est une description très intéressante sur une histoire tout aussi intéressante Ceci est une description très intéressante sur une histoire tout aussi intéressante Ceci est une description très intéressante sur une histoire tout aussi intéressante Ceci est une description très intéressante sur une histoire tout aussi intéressante Ceci est une description très intéressante sur une histoire tout aussi intéressante" />
-            </Grid>
-            <Grid item xs={width}>
-              <StoryCard title="Obscurité" date="24/02/2021" description="Ceci est une description très intéressante sur une histoire tout aussi intéressante Ceci est une description très intéressante sur une histoire tout aussi intéressante Ceci est une description très intéressante sur une histoire tout aussi intéressante Ceci est une description très intéressante sur une histoire tout aussi intéressante Ceci est une description très intéressante sur une histoire tout aussi intéressante Ceci est une description très intéressante sur une histoire tout aussi intéressante" />
-            </Grid>
-            <Grid item xs={width}>
-              <StoryCard title="Obscurité" date="24/02/2021" description="Ceci est une description très intéressante sur une histoire tout aussi intéressante Ceci est une description très intéressante sur une histoire tout aussi intéressante Ceci est une description très intéressante sur une histoire tout aussi intéressante Ceci est une description très intéressante sur une histoire tout aussi intéressante Ceci est une description très intéressante sur une histoire tout aussi intéressante Ceci est une description très intéressante sur une histoire tout aussi intéressante" />
-            </Grid>
-            <Grid item xs={width}>
-              <StoryCard title="Obscurité" date="24/02/2021" description="Ceci est une description très intéressante sur une histoire tout aussi intéressante Ceci est une description très intéressante sur une histoire tout aussi intéressante Ceci est une description très intéressante sur une histoire tout aussi intéressante Ceci est une description très intéressante sur une histoire tout aussi intéressante Ceci est une description très intéressante sur une histoire tout aussi intéressante Ceci est une description très intéressante sur une histoire tout aussi intéressante" />
-            </Grid>
-            <Grid item xs={width}>
-              <StoryCard title="Obscurité" date="24/02/2021" description="Ceci est une description très intéressante sur une histoire tout aussi intéressante Ceci est une description très intéressante sur une histoire tout aussi intéressante Ceci est une description très intéressante sur une histoire tout aussi intéressante Ceci est une description très intéressante sur une histoire tout aussi intéressante Ceci est une description très intéressante sur une histoire tout aussi intéressante Ceci est une description très intéressante sur une histoire tout aussi intéressante" />
-            </Grid>
-            <Grid item xs={width}>
-              <StoryCard title="Obscurité" date="24/02/2021" description="Ceci est une description très intéressante sur une histoire tout aussi intéressante Ceci est une description très intéressante sur une histoire tout aussi intéressante Ceci est une description très intéressante sur une histoire tout aussi intéressante Ceci est une description très intéressante sur une histoire tout aussi intéressante Ceci est une description très intéressante sur une histoire tout aussi intéressante Ceci est une description très intéressante sur une histoire tout aussi intéressante" />
-            </Grid>
-            <Grid item xs={width}>
-              <StoryCard title="Obscurité" date="24/02/2021" description="Ceci est une description très intéressante sur une histoire tout aussi intéressante Ceci est une description très intéressante sur une histoire tout aussi intéressante Ceci est une description très intéressante sur une histoire tout aussi intéressante Ceci est une description très intéressante sur une histoire tout aussi intéressante Ceci est une description très intéressante sur une histoire tout aussi intéressante Ceci est une description très intéressante sur une histoire tout aussi intéressante" />
-            </Grid>
-          </Grid>
+          <Catalog storylist={storylist}/>
         </Container>
       </div>
     </ThemeProvider>

@@ -59,7 +59,7 @@ export default function StoryCard({genre, description, title, longueur, url, ima
             />
             <CardMedia
                 className={classes.media}
-                image={image}
+                image={formatImage}
                 title={title}
             />
             <CardContent>
