@@ -5,9 +5,8 @@ const Catalog = ({ storylist }) => {
     return (
         <Grid container spacing={4}>
             {storylist.map(({ genres, description, title, tempsLecture, url, image, date }, index) =>
-                <Grid item xs={4}>
+                <Grid key={index} item xs={4}>
                     <StoryCard
-                        key={index}
                         title={title}
                         date={date}
                         description={description}

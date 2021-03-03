@@ -22,7 +22,7 @@ const useStyles = makeStyles(theme => ({
     },
     description: ({ overflow }) => ({
         textAlign: 'left',
-        height: theme.spacing(10),
+        height: theme.spacing(15),
         overflow: overflow ? "hidden" : "unset",
         paddingTop: theme.spacing(2),
         paddingRight: theme.spacing(4),
@@ -31,6 +31,9 @@ const useStyles = makeStyles(theme => ({
     span: {
         height: theme.spacing(1),
         display: "block",
+        fontSize: "2rem",
+        marginTop: theme.spacing(-2),
+        marginBottom: theme.spacing(2),
     },
     media: {
         height: 0,
@@ -67,16 +70,16 @@ export default function StoryCard({genres, description, title, tempsLecture, url
     const [isSetOverflow, setIsSetOverflow] = useState(false);
     useEffect(() => {
         if (!isSetOverflow) {
-            setOverflow(description.length > 64);
+            console.log();
+            setOverflow(description.length > 128);
             setIsSetOverflow(true);
         }
     }, []);
-    const classes = useStyles({ overflow });
+    const classes = useStyles({ overflow:description.length>128 });
     const formatImage = formatimg(image);
 
     return (
         <Card className={classes.card}>
-            
             <Box className={classes.timeBox}>
                 <HourglassEmpty />
                 <Typography>
