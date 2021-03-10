@@ -5,6 +5,7 @@ import {
 } from '@material-ui/core';
 import { Favorite, Share, HourglassEmpty } from '@material-ui/icons';
 import formatimg from "../utils/formatimg";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles(theme => ({
     link: {
@@ -117,11 +118,11 @@ export default function StoryCard({genres, description, title, tempsLecture, url
                         </IconButton>
                     </Grid>
                     <Grid item container className={classes.linkContainer} xs={6}>
-                        <a className={classes.link} href={url}>
+                        <Link className={classes.link} to={url}>
                             <Typography className={classes.bolder} variant="body2" color="textPrimary" component="p">
                                 Lire la suite
-                        </Typography>
-                        </a>
+                            </Typography>
+                        </Link>
                     </Grid>
                 </Grid>
             </CardActions>

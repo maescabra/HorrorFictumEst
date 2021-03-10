@@ -7,6 +7,13 @@ import FilteredCatalog from './components/FilteredCatalog';
 import Logo from './components/Logo';
 import { makeStyles } from '@material-ui/core';
 import storylist from './data/storylist';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import Story from './components/Story';
 
 const useStyles = makeStyles(theme=>({
   divLogo: {
@@ -34,23 +41,36 @@ function App() {
   const classes = useStyles();
 
   return (
-    <ThemeProvider theme={theme}>
-      
-      <CssBaseline />
-      <div className="App">
-        <div className={classes.divLogo}>
-          <Logo/>
-        </div>
-        {/*<LanguageSwitch/>
+    <Router>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <div className="App">
+          <Link to="/">
+            <div className={classes.divLogo}>
+              <Logo />
+            </div>
+          </Link>
+          {/*<LanguageSwitch/>
         <h1>{spacing}</h1>
         <h1>{width}</h1>
         <input type="number" value={spacing} onChange={handleSpacingChange}/>
         <input type="number" style={{marginBottom:100}} value={width} onChange={handleWidthChange}/>*/}
-        <Container className={classes.container}>
-          <FilteredCatalog storylist={storylist}/>
-        </Container>
-      </div>
-    </ThemeProvider>
+          <Container className={classes.container}>
+            <Switch>
+              <Route path="/stories/1">
+                <Story story={storylist[0]}/>
+              </Route>
+              <Route path="/stories/2">
+                <Story story={storylist[1]}/>
+              </Route>
+              <Route path="/">
+                <FilteredCatalog storylist={storylist} />
+              </Route>
+            </Switch>
+          </Container>
+        </div>
+      </ThemeProvider>
+    </Router>
   );
 }
 

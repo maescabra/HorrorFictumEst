@@ -8,9 +8,10 @@ const storylist = [
       tempsLecture: 5,
       date: "10/02/2021",
       description:"Lorem ipsum dolores ombrage Lorem ipsum dolores ombrage Lorem ipsum dolores ombrage Lorem ipsum dolores ombrage Lorem ipsum dolores ombrage Lorem ipsum dolores ombrage Lorem ipsum dolores ombrage ",
-      url:"http://localhost:3000/stories/1",
+      url:"/stories/1",
       title:"Easy Street",
       image:"/assets/stories/easystreet.png",
+      texte:<p> Test 1 "Lorem ipsum dolores ombrage Lorem ipsum dolores ombrage </p>,
     },
     {
       genres: [
@@ -20,9 +21,10 @@ const storylist = [
       tempsLecture: 10,
       date: "13/02/2021",
       description:"Lorem ipsum dolores ombrage",
-      url:"http://localhost:3000/stories/2",
+      url:"/stories/2",
       title:"Obscur",
       image:"/assets/stories/easystreet.png",
+      texte:<p> Test 2 "Lorem ipsum dolores ombrage Lorem ipsum dolores ombrage </p>,
     }
   ];
 
