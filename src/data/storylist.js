@@ -53,7 +53,7 @@ const storylist = [
     },
     {
       genres: [
-        psychologique,
+        paranormal,
       ],
       tempsLecture: 5,
       date: "10/02/2021",

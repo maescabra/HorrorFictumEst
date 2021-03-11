@@ -9,12 +9,13 @@ const useStyles = makeStyles(theme=>({
     },
     gridContainer:{
         paddingBottom:theme.spacing(10),
-    }
+    },
 }))
 
 const FilteredCatalog = ({ storylist }) => {
 
     const classes = useStyles();
+    
     const filtres = [
         paranormal, psychologique, firstperson
     ].map(genre=>genre.name)
@@ -25,6 +26,8 @@ const FilteredCatalog = ({ storylist }) => {
             filtres.includes(name)
         ).length 
     ) 
+    
+
     console.log({filtres,genreHistoire:storylist[0].genres})
     /*maintenir un state comme dans LanguageSwitch.jsx qui contient une liste des filtres qu'on applique. Clic bouton = modifie bouton (outlined to contained) et appel fonction (onclick => updateFilters()) passer en paramètres le nom du filtre. Si le state contient déjà le nom, retirer sinon ajoute*/
 
@@ -40,6 +43,8 @@ const FilteredCatalog = ({ storylist }) => {
                             startIcon={icon}
                             size="large"
                             className={classes.button}
+                            id="buttonGenre"
+                            onClick={() => {updateFilters}}
                         >
                             {name}
                         </Button>
