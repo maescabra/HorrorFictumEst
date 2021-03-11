@@ -63,6 +63,18 @@ function App() {
               <Route path="/stories/2">
                 <Story story={storylist[1]}/>
               </Route>
+              <Route path="/stories/3">
+                <Story story={storylist[2]}/>
+              </Route>
+              <Route path="/stories/4">
+                <Story story={storylist[3]}/>
+              </Route>
+              <Route path="/stories/5">
+                <Story story={storylist[4]}/>
+              </Route>
+              <Route path="/stories/6">
+                <Story story={storylist[5]}/>
+              </Route>
               <Route path="/">
                 <FilteredCatalog storylist={storylist} />
               </Route>
