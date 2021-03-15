@@ -1,7 +1,7 @@
 import { Grid, makeStyles } from "@material-ui/core";
 import Button from '@material-ui/core/Button';
 import Catalog from "./Catalog";
-import genres, { psychologique, paranormal, firstperson } from "../types/genres";
+import genres, { psychologique, paranormal, satanisme, crime } from "../types/genres";
 
 const useStyles = makeStyles(theme=>({
     button: {
@@ -17,7 +17,7 @@ const FilteredCatalog = ({ storylist }) => {
     const classes = useStyles();
     
     const filtres = [
-        paranormal, psychologique, firstperson
+        paranormal, psychologique, satanisme, crime
     ].map(genre=>genre.name)
 
     // Quand on clique sur un bouton correspondant à un genre, on affiche seulement les cards qui sont du genre sélectionné. genre1 OU genre2

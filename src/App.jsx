@@ -7,7 +7,7 @@ import FilteredCatalog from './components/FilteredCatalog';
 import Logo from './components/Logo';
 import { makeStyles } from '@material-ui/core';
 import storylist from './data/storylist';
-import Test from './components/Test';
+//import StateExplication from './components/StateExplication';
 import {
   BrowserRouter as Router,
   Switch,
@@ -55,8 +55,8 @@ function App() {
         <h1>{spacing}</h1>
         <h1>{width}</h1>
         <input type="number" value={spacing} onChange={handleSpacingChange}/>
-        <input type="number" style={{marginBottom:100}} value={width} onChange={handleWidthChange}/>*/}
-          <Test name="Jackson"/>
+        <input type="number" style={{marginBottom:100}} value={width} onChange={handleWidthChange}/>
+          <StateExplication name="Jackson"/>*/}
           <Container className={classes.container}>
             <Switch>
               <Route path="/stories/1">

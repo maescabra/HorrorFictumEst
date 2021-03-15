@@ -1,4 +1,4 @@
-import { psychologique, paranormal, firstperson } from '../types/genres';
+import { psychologique, paranormal, satanisme, crime } from '../types/genres';
 
 const storylist = [
     {
@@ -16,7 +16,7 @@ const storylist = [
     {
       genres: [
         paranormal,
-        firstperson
+        satanisme
       ],
       tempsLecture: 10,
       date: "13/02/2021",
@@ -41,7 +41,7 @@ const storylist = [
     {
       genres: [
         psychologique,
-        firstperson
+        satanisme
       ],
       tempsLecture: 15,
       date: "10/02/2021",
@@ -54,6 +54,7 @@ const storylist = [
     {
       genres: [
         paranormal,
+        crime
       ],
       tempsLecture: 5,
       date: "10/02/2021",
@@ -65,8 +66,7 @@ const storylist = [
     },
     {
       genres: [
-        psychologique,
-        paranormal
+        crime
       ],
       tempsLecture: 10,
       date: "10/02/2021",
