@@ -3,7 +3,7 @@ import { psychologique, paranormal, satanisme, crime } from '../types/genres';
 const storylist = [
     {
       genres: [
-        psychologique,
+        satanisme,
       ],
       tempsLecture: 5,
       date: "10/02/2021",
