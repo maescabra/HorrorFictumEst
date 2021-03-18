@@ -45,12 +45,12 @@ Fonctionnalités à intégrer :
 - Version audio des histoires
 - Possibilité pour les utilisateurs de proposer des histoires (par mail ? ou directement grâce à un formulaire qui envoie les données sur une page Suggestions)
 
-ARCHITECTURE
+> ARCHITECTURE
 
 Front :
 
 Sur la page d'accueil, on a toutes les cartes d'histoires affichant les informations essentielles pour chaque histoire :
-	- le(s) genre(s) montré grâce à une icône,
+	- le(s) genre(s) montré(s) grâce à une icône,
 	- le temps de lecture,
 	- la date de création,
 	- le titre,
@@ -59,19 +59,20 @@ Sur la page d'accueil, on a toutes les cartes d'histoires affichant les informat
 	- un bouton permettant de mettre les histoires en favori (à sauvegarder dans le cache): PAS FONCTIONNEL,
 	- un bouton permettant de partager l'histoire : PAS FONCTIONNEL,
 	- un bouton "Lire la suite", redirigeant vers la page de l'histoire.
+On a également un logo et une barre avec des boutons contenant le nom de chaque genre en lien avec l'horreur.
 
 L'application est composée d'un dossier appelé [React_HorrorApp], dans lequel on retrouve :
 
 - un dossier [node_modules] contenant tous les modules de Node.js (donc tous les modules créés par d'autres contributeurs),
-- un dossier [public] qui est la partie qui importe l'application et auquel j'ai à peine touché, sauf pour et modifier le favicon et ajouter les assets (les images
+- un dossier [public] qui est la partie qui importe l'application et auquel j'ai à peine touché, sauf pour modifier le favicon et ajouter les assets (les images
 correspondant à chaque histoire),
 - et un dossier [src] contenant le cœur de l'application. J'ai créé à l'intérieur de celui-ci :
 	- un dossier [components] contenant tous mes composants :
-		- un fichier StoryCard.jsx qui utilise les informations de storylist.js 
+		- un fichier StoryCard.jsx qui utilise les informations de storylist.js,
 		- un fichier Logo.jsx qui permet d'importer et styliser le logo créé,
 		- un fichier Catalog.jsx qui prend en paramètre storylist.js et qui affiche les cartes,
-		- un fichier FilteredCatalog.jsx qui (est censé prendre) en paramètre genres.js pour filtrer les genres au clic sur les boutons.
-		- un fichier Story.jsx qui permet de styliser les histoires sur leur page dédiée
+		- un fichier FilteredCatalog.jsx qui (est censé prendre) en paramètre genres.js pour filtrer les genres au clic sur les boutons,
+		- un fichier Story.jsx qui permet de styliser les histoires sur leur page dédiée,
 	- un dossier [data] contenant un fichier storylist.js qui contient la liste des histoires avec toutes leurs spécificités,
 	- un dossier [types] contenant un fichier genres.js qui contient tous les genres, leur couleur et leur nom,
 	- un dossier [utils] contenant un fichier formatimg.js qui permet de formater l'URL des images locales.
@@ -80,6 +81,6 @@ correspondant à chaque histoire),
 - Pour créer mes composants, j'ai exploité les composants déjà créés par Material-UI (similaire à Bootstrap)
 - J'ai intégré les styles grâce à la méthode makeStyles() de Material-UI.
 
-CE SUR QUOI JE ME CONCENTRE ACTUELLEMENT
+> CE SUR QUOI JE ME CONCENTRE ACTUELLEMENT
 
 Je travaille actuellement sur le filtrage des histoires, la modification des styles des boutons et si j'ai le temps, je songerai à la mise en forme du texte.
