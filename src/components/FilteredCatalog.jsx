@@ -55,10 +55,6 @@ const FilteredCatalog = ({ storylist }) => {
                 console.log("addFiltre");
             }
     }
-     // Quand on clique sur un bouton correspondant à un genre, on affiche seulement les cards qui sont du genre sélectionné. genre1 OU genre2
-    /*maintenir un state qui contient une liste des filtres qu'on applique. Clic bouton = modifie bouton (outlined to contained) et appel fonction (onclick => updateFilters()) passer en paramètres le nom du filtre. Si le state contient déjà le nom, retirer sinon ajoute*/
-
-    
   
     return (
         <>

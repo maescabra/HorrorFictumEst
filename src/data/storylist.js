@@ -211,6 +211,18 @@ const storylist = [
       image:"/assets/stories/easystreet.png",
       texte:[<>Lorem ipsum test6 partie 1</>, <>Partie 2</>]
     },
+    {
+      genres: [
+        satanisme,
+      ],
+      tempsLecture: 5,
+      date: "10/02/2021",
+      description:"Lorem ipsum dolores ombrage Lorem ipsum dolores ombrage Lorem ipsum dolores ombrage Lorem ipsum dolores ombrage Lorem ipsum dolores ombrage Lorem ipsum dolores ombrage Lorem ipsum dolores ombrage ",
+      url:"/stories/1",
+      title:"Easy Street",
+      image:"/assets/stories/easystreet.png",
+      texte:[<>Lorem ipsum test7 partie 1</>, <>Partie 2</>,<>Partie 3</>]
+    }
   ];
 
   export default storylist;

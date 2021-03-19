@@ -21,7 +21,6 @@ const useStyles = makeStyles(theme=>({
       position:"absolute",
       top:theme.spacing(2),
       left:theme.spacing(2),
-      
   },
   container: {
       paddingTop:theme.spacing(15),
@@ -76,6 +75,9 @@ function App() {
               </Route>
               <Route path="/stories/6">
                 <Story story={storylist[5]}/>
+              </Route>
+              <Route path="/stories/7">
+                <Story story={storylist[6]}/>
               </Route>
               <Route path="/">
                 <FilteredCatalog storylist={storylist} />
