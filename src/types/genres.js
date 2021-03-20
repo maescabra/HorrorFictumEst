@@ -1,8 +1,9 @@
-import { green, purple, amber, red } from '@material-ui/core/colors';
+import { green, purple, amber, red, blue } from '@material-ui/core/colors';
 import Psychology from '../components/icons/Psychology';
 import Paranormal from '../components/icons/Paranormal';
 import Satanisme from '../components/icons/Satanisme';
 import Crime from '../components/icons/Crime';
+import Policier from '../components/icons/Policier';
 
 const psychologique = {
     name : "psychologique",
@@ -24,10 +25,15 @@ const crime = {
     color : red[500],
     icon : <Crime fill={red[500]}/>,
 }
+const policier = {
+    name : "policier",
+    color : blue[500],
+    icon : <Policier fill={blue[500]}/>,
+}
 const genres = {
-    psychologique,paranormal,satanisme,crime
+    psychologique,paranormal,satanisme,crime,policier
 }
 
 export default genres;
 
-export {genres,psychologique,paranormal,satanisme,crime};
+export {genres,psychologique,paranormal,satanisme,crime,policier};

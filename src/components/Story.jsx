@@ -4,7 +4,7 @@ import {
     Container, Button, makeStyles
 } from '@material-ui/core';
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles(theme => ({
     image: {
         width:'15%',
         borderRadius:'20px',
@@ -12,7 +12,17 @@ const useStyles = makeStyles(() => ({
     container: {
         "& p": {
             textAlign:'left',
-            fontSize:'13',
+            fontSize:'2em',
+        }
+    },
+    divTexte: {
+        paddingTop:theme.spacing(3),
+    },
+    bouton: {
+        "& span": {
+            fontSize:'2em',
+            marginLeft:theme.spacing(5),
+            marginRight:theme.spacing(5),
         }
     }
 }))
@@ -22,6 +32,7 @@ const Story = ({story}) => {
     const [isPageScrolled,setIsPageScrolled]=useState(false);
     const scrollDir = useScrollDirection();
     const classes = useStyles();
+    /*
     useEffect(() => {
         if (isPageScrolled){
             if (scrollDir==="up" && page>0){
@@ -33,28 +44,31 @@ const Story = ({story}) => {
         }
         setIsPageScrolled(true);
     }, [scrollDir]);
+    */
+
     return (
         <Container className={classes.container} onScroll={() => {
             console.log("scroll");
         }}>
-        <h1>{story.title}</h1>
+        <h1>
+            {story.title}
+        </h1>
         <img src={story.image} className={classes.image}></img>
         
-            {scrollDir}
-            {page < story.texte.length-1 && <Button
-                onClick={() => setPage(page+1)}
-            >Page suivante
-            </Button>
-            }
-            {page > 0 && <Button
-                onClick={() => setPage(page-1)}
-            >Page précédente
-            </Button>
-            }
-            <div style={{height:"1600px"}}>
-            {story.texte[page]}
+            <div className={classes.divTexte}>
+                {story.texte[page]}
             </div>
-            {story.texte[page]}
+            
+            <div className={classes.bouton}>
+                {page > 0 && <Button onClick={() => setPage(page-1)}>
+                    Page précédente
+                </Button>}
+
+                {page < story.texte.length-1 && <Button onClick={() => setPage(page+1)}>
+                    Page suivante
+                </Button>}
+            </div>
+
         </Container>
     )
     
