@@ -3,9 +3,10 @@ import {
     Grid, Typography, Card, CardHeader, CardMedia,
     CardActions, CardContent, IconButton, makeStyles, Box
 } from '@material-ui/core';
-import { Favorite, Share, HourglassEmpty } from '@material-ui/icons';
+import { Favorite, Share } from '@material-ui/icons';
 import formatimg from "../utils/formatimg";
 import { Link } from "react-router-dom";
+import Hourglass from '../components/icons/Hourglass';
 
 const useStyles = makeStyles(theme => ({
     link: {
@@ -53,6 +54,9 @@ const useStyles = makeStyles(theme => ({
         top: theme.spacing(2.5),
         right: theme.spacing(3),
         position: "absolute",
+        '& svg':{
+            margin:theme.spacing(0.3)
+        }
     },
     card: {
         position:"relative",
@@ -62,6 +66,9 @@ const useStyles = makeStyles(theme => ({
         '& span:first-child':{
             fontWeight: '600',
         }
+    },
+    hourglass: {
+        marginRight: theme.spacing(1),
     }
 }))
 
@@ -82,7 +89,7 @@ export default function StoryCard({genres, description, title, tempsLecture, url
     return (
         <Card className={classes.card}>
             <Box className={classes.timeBox}>
-                <HourglassEmpty />
+                <Hourglass className={classes.hourglass}></Hourglass>
                 <Typography>
                     {tempsLecture} min
                 </Typography>

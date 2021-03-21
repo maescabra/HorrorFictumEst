@@ -3,6 +3,8 @@ import { useScrollDirection } from "../hooks/useScrollDirection";
 import {
     Container, Button, makeStyles
 } from '@material-ui/core';
+import Next from '../components/icons/Next';
+import Previous from '../components/icons/Previous';
 
 const useStyles = makeStyles(theme => ({
     image: {
@@ -19,10 +21,22 @@ const useStyles = makeStyles(theme => ({
         paddingTop:theme.spacing(3),
     },
     bouton: {
+        position: 'sticky',
+        bottom: '0',
+        backgroundColor: "rgba(15, 12, 12, 0.7)",
+       
         "& span": {
             fontSize:'2em',
-            marginLeft:theme.spacing(5),
-            marginRight:theme.spacing(5),
+            paddingRight:theme.spacing(5),
+            paddingLeft:theme.spacing(5),
+            "& p": {
+                fontWeight:"200",
+                textTransform:"none",
+                fontSize:"20px",
+                marginRight:theme.spacing(2),
+                marginLeft:theme.spacing(2),
+            }
+            
         }
     }
 }))
@@ -61,11 +75,11 @@ const Story = ({story}) => {
             
             <div className={classes.bouton}>
                 {page > 0 && <Button onClick={() => setPage(page-1)}>
-                    Page précédente
+                    <Previous/>  <p>Partie précédente</p>
                 </Button>}
 
                 {page < story.texte.length-1 && <Button onClick={() => setPage(page+1)}>
-                    Page suivante
+                    <p>Partie suivante</p>  <Next/>
                 </Button>}
             </div>
 

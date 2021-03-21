@@ -1,39 +1,40 @@
-import { green, purple, amber, red, blue } from '@material-ui/core/colors';
+import { green, purple, red, indigo, orange } from '@material-ui/core/colors';
 import Psychology from '../components/icons/Psychology';
 import Paranormal from '../components/icons/Paranormal';
-import Satanisme from '../components/icons/Satanisme';
-import Crime from '../components/icons/Crime';
+import Occulte from '../components/icons/Occulte';
 import Policier from '../components/icons/Policier';
+import Mystere from '../components/icons/Mystere';
 
+const occulte = {
+    name : "occulte",
+    color : red["A700"],
+    icon : <Occulte fill={red["A700"]}/>,
+}
 const psychologique = {
     name : "psychologique",
-    color : purple[500],
-    icon : <Psychology fill={purple[500]}/>,
-}
-const paranormal = {
-    name : "paranormal",
-    color : green[500],
-    icon : <Paranormal fill={green[500]}/>,
-}
-const satanisme = {
-    name : "satanisme",
-    color : amber[500],
-    icon : <Satanisme fill={amber[500]}/>,
-}
-const crime = {
-    name : "crime",
-    color : red[500],
-    icon : <Crime fill={red[500]}/>,
+    color : purple[600],
+    icon : <Psychology fill={purple[600]}/>,
 }
 const policier = {
     name : "policier",
-    color : blue[500],
-    icon : <Policier fill={blue[500]}/>,
+    color : indigo[500],
+    icon : <Policier fill={indigo[500]}/>,
 }
+const paranormal = {
+    name : "paranormal",
+    color : green[600],
+    icon : <Paranormal fill={green[600]}/>,
+}
+const mystere = {
+    name : "mystère",
+    color : orange[800],
+    icon : <Mystere fill={orange[800]}/>,
+}
+
 const genres = {
-    psychologique,paranormal,satanisme,crime,policier
+    occulte,psychologique,policier,paranormal,mystere,
 }
 
 export default genres;
 
-export {genres,psychologique,paranormal,satanisme,crime,policier};
+export {genres,occulte,psychologique,policier,paranormal,mystere,};

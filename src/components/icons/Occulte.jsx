@@ -1,7 +1,7 @@
 import { SvgIcon } from "@material-ui/core";
 import React from "react";
 
-function Satanisme(props) {
+function Occulte(props) {
     return (
         <SvgIcon {...props}
             xmlns="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -22,4 +22,4 @@ function Satanisme(props) {
     );
 }
 
-export default Satanisme;
+export default Occulte;

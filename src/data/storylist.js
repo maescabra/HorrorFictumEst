@@ -1,9 +1,9 @@
-import { psychologique, paranormal, satanisme, crime, truestory, policier } from '../types/genres';
+import { occulte, psychologique, policier, paranormal, mystere } from '../types/genres';
 
 const storylist = [
     {
       genres: [
-        satanisme,
+        occulte,
       ],
       tempsLecture: 5,
       date: "10/02/2021",
@@ -170,20 +170,18 @@ const storylist = [
         Ne m'emmen_/"
         </p>,
         <p>
-        ---
+        ---<br/>
 
-        Bien #7384209
-        Objet : Journal du patient 44-10
+        Bien #7384209<br/>
+        Objet : Journal du patient 44-10<br/>
 
-        ---
-        </p>,
-        <p>
+        ---<br/>
 
         <h3>Patient 44-10</h3>
 
-        Nom du patient : Clotilde SATURNIN
-        Dangerosité : Maximale
-        Motif(s) d'internement : Meurtres au premier degré de sa femme et de sa fille, démembrement, amnésies antérogrades, traumatisme affectif
+        Nom du patient : Clotilde SATURNIN<br/>
+        Dangerosité : Maximale<br/>
+        Motif(s) d'internement : Meurtres au premier degré de sa femme et de sa fille, démembrement, amnésies antérogrades, traumatisme affectif<br/>
         Observations : A une haine envers le corps médical et pense que nous sommes ceux qui aurions tué sa femme et kidnappé sa fille. Faire attention à l'emploi des mots.
         
         </p>
@@ -193,7 +191,7 @@ const storylist = [
     {
       genres: [
         psychologique,
-        satanisme
+        occulte
       ],
       tempsLecture: 15,
       date: "10/02/2021",
@@ -206,7 +204,7 @@ const storylist = [
     {
       genres: [
         paranormal,
-        crime
+        policier
       ],
       tempsLecture: 5,
       date: "10/02/2021",
@@ -218,7 +216,7 @@ const storylist = [
     },
     {
       genres: [
-        crime
+        mystere,
       ],
       tempsLecture: 10,
       date: "10/02/2021",
@@ -230,7 +228,7 @@ const storylist = [
     },
     {
       genres: [
-        satanisme,
+        occulte,
       ],
       tempsLecture: 5,
       date: "10/02/2021",
@@ -255,6 +253,7 @@ const storylist = [
     {
       genres: [
         paranormal,
+        mystere
       ],
       tempsLecture: 5,
       date: "10/02/2021",
