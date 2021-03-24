@@ -56,7 +56,7 @@ function App() {
         <input type="number" value={spacing} onChange={handleSpacingChange}/>
         <input type="number" style={{marginBottom:100}} value={width} onChange={handleWidthChange}/>
           <StateExplication name="Jackson"/>*/}
-          <Container className={classes.container}>
+          <Container className={classes.container} onContextMenu={(e)=> e.preventDefault()}>
             <Switch>
               <Route path="/stories/1">
                 <Story story={storylist[0]}/>
