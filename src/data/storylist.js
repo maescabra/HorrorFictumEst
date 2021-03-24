@@ -261,7 +261,7 @@ const storylist = [
       date: "8/01/2021",
       description:"L'année dernière, une série d'événements macabres a frappé une petite famille d'Italie. Rien n'a permis d'élucider le mystère.",
       url:"/stories/9",
-      title:"Naturel",
+      title:"Castiglioni",
       image:"/assets/stories/nature.png",
       texte:[<p>Lorem ipsum test9 partie 1</p>, <p>Partie 2</p>,<p>Partie 3</p>]
     },
@@ -273,7 +273,7 @@ const storylist = [
       date: "1/01/2021",
       description:"Le gouvernement veut nous contrôler. Nous devons agir.",
       url:"/stories/10",
-      title:"Distanciation sociale",
+      title:"Sous silence",
       image:"/assets/stories/distanciation.png",
       texte:[<p>Lorem ipsum test10 partie 1</p>, <p>Partie 2</p>,<p>Partie 3</p>]
     }
