@@ -20,7 +20,7 @@ const storylist = [
       ],
       tempsLecture: 10,
       date: "13/02/2021",
-      description:"Le pardon se mérite. Le roi en rouge vous accordera-t-il le pardon ?",
+      description:"Le pardon se mérite. Le roi en rouge vous l'accordera-t-il ?",
       url:"/stories/2",
       title:"Rédemption",
       image:"/assets/stories/redking.png",
