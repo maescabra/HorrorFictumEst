@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useScrollDirection } from "../hooks/useScrollDirection";
+/* import { useScrollDirection } from "../hooks/useScrollDirection"; */
 import {
     Container, Button, makeStyles
 } from '@material-ui/core';
@@ -43,8 +43,8 @@ const useStyles = makeStyles(theme => ({
 
 const Story = ({story}) => {
     const [page,setPage]=useState(0);
-    const [isPageScrolled,setIsPageScrolled]=useState(false);
-    const scrollDir = useScrollDirection();
+    /*const [isPageScrolled,setIsPageScrolled]=useState(false);
+    const scrollDir = useScrollDirection();*/
     const classes = useStyles();
     /*
     useEffect(() => {
