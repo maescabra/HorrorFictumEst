@@ -6,8 +6,8 @@ const storylist = [
         occulte,
       ],
       tempsLecture: 5,
-      date: "10/02/2021",
-      description:"Lorem ipsum dolores ombrage Lorem ipsum dolores ombrage Lorem ipsum dolores ombrage Lorem ipsum dolores ombrage Lorem ipsum dolores ombrage Lorem ipsum dolores ombrage Lorem ipsum dolores ombrage ",
+      date: "20/02/2021",
+      description:"Les rues ne sont plus sûres et sont devenues presque impraticables. L'une d'entre elles, Easy Street, a fait couler beaucoup d'encre, et peut-être un peu de sang également.",
       url:"/stories/1",
       title:"Easy Street",
       image:"/assets/stories/easystreet.png",
@@ -20,22 +20,23 @@ const storylist = [
       ],
       tempsLecture: 10,
       date: "13/02/2021",
-      description:"Lorem ipsum dolores ombrage",
+      description:"Le pardon se mérite. Le roi en rouge vous accordera-t-il le pardon ?",
       url:"/stories/2",
-      title:"Obscur",
-      image:"/assets/stories/easystreet.png",
-      texte:[<p>Lorem ipsum test2 partie 1</p>, <p>Partie 2</p>]
+      title:"Rédemption",
+      image:"/assets/stories/redking.png",
+      texte:[<p>Lorem ipsum test2 partie 1</p>, <p>Partie 2</p>,<p>Partie 3</p>]
     },
     {
       genres: [
         psychologique,
+        policier
       ],
       tempsLecture: 15,
       date: "10/02/2021",
-      description:"Lorem ipsum dolores ombrage Lorem ipsum dolores ombrage Lorem ipsum dolores ombrage Lorem ipsum dolores ombrage Lorem ipsum dolores ombrage Lorem ipsum dolores ombrage Lorem ipsum dolores ombrage ",
+      description:"Êtes-vous encore capable de raisonner ?",
       url:"/stories/3",
       title:"Papillon Doré",
-      image:"/assets/stories/easystreet.png",
+      image:"/assets/stories/papillondore.png",
       texte:[
         <p>
         <h3>12.03.2020 à 21h15</h3>
@@ -194,74 +195,87 @@ const storylist = [
         occulte
       ],
       tempsLecture: 15,
-      date: "10/02/2021",
-      description:"Lorem ipsum dolores ombrage Lorem ipsum dolores ombrage Lorem ipsum dolores ombrage Lorem ipsum dolores ombrage Lorem ipsum dolores ombrage Lorem ipsum dolores ombrage Lorem ipsum dolores ombrage ",
+      date: "04/02/2021",
+      description:"La mort n'est pas un fléau. La mort fait partie intégrante de la vie. Ainsi, les morts veillent sur les vivants.",
       url:"/stories/4",
-      title:"Murder",
-      image:"/assets/stories/easystreet.png",
-      texte:[<p>Lorem ipsum test4 partie 1</p>, <p>Partie 2</p>]
+      title:"Spectre",
+      image:"/assets/stories/spectre.png",
+      texte:[<p>Lorem ipsum test4 partie 1</p>, <p>Partie 2</p>,<p>Partie 3</p>]
     },
     {
       genres: [
         paranormal,
         policier
       ],
-      tempsLecture: 5,
-      date: "10/02/2021",
-      description:"Lorem ipsum dolores ombrage",
+      tempsLecture: 15,
+      date: "31/01/2021",
+      description:"Que celui qui n'a jamais ressenti une grande colère l'envahir me jette la première pierre.",
       url:"/stories/5",
       title:"Colère",
-      image:"/assets/stories/easystreet.png",
-      texte:[<p>Lorem ipsum test5 partie 1</p>, <p>Partie 2</p>]
+      image:"/assets/stories/colere.png",
+      texte:[<p>Lorem ipsum test5 partie 1</p>, <p>Partie 2</p>,<p>Partie 3</p>]
     },
     {
       genres: [
         mystere,
       ],
       tempsLecture: 10,
-      date: "10/02/2021",
-      description:"Lorem ipsum dolores ombrage Lorem ipsum dolores ombrage Lorem ipsum dolores ombrage",
+      date: "27/01/2021",
+      description:"Que ma miséricorde l'emporte sur ma colère.",
       url:"/stories/6",
       title:"Miséricorde",
-      image:"/assets/stories/easystreet.png",
-      texte:[<p>Lorem ipsum test6 partie 1</p>, <p>Partie 2</p>]
+      image:"/assets/stories/misericorde.png",
+      texte:[<p>Lorem ipsum test6 partie 1</p>, <p>Partie 2</p>,<p>Partie 3</p>]
     },
     {
       genres: [
         occulte,
+        mystere
       ],
       tempsLecture: 5,
-      date: "10/02/2021",
-      description:"Lorem ipsum dolores ombrage Lorem ipsum dolores ombrage Lorem ipsum dolores ombrage Lorem ipsum dolores ombrage Lorem ipsum dolores ombrage Lorem ipsum dolores ombrage Lorem ipsum dolores ombrage ",
-      url:"/stories/1",
-      title:"Easy Street",
-      image:"/assets/stories/easystreet.png",
+      date: "22/01/2021",
+      description:"La forêt recelle bien des mystères. Oseriez-vous l'affronter ? Moi, j'ai essayé.",
+      url:"/stories/7",
+      title:"Esprits des bois",
+      image:"/assets/stories/woodqueen.png",
       texte:[<p>Lorem ipsum test7 partie 1</p>, <p>Partie 2</p>,<p>Partie 3</p>]
     },
     {
       genres: [
-        policier,
+        psychologique,
       ],
-      tempsLecture: 5,
-      date: "10/02/2021",
-      description:"Lorem ipsum dolores ombrage Lorem ipsum dolores ombrage Lorem ipsum dolores ombrage Lorem ipsum dolores ombrage Lorem ipsum dolores ombrage Lorem ipsum dolores ombrage Lorem ipsum dolores ombrage ",
-      url:"/stories/1",
-      title:"Easy Street",
-      image:"/assets/stories/easystreet.png",
-      texte:[<p>Lorem ipsum test7 partie 1</p>, <p>Partie 2</p>,<p>Partie 3</p>]
+      tempsLecture: 20,
+      date: "15/01/2021",
+      description:"Je suis celui qui amène les âmes dans l'au-delà. Celui qui accomplit les tâches ingrates que les plus puissants délèguent.",
+      url:"/stories/8",
+      title:"Le passeur",
+      image:"/assets/stories/lepasseur.png",
+      texte:[<p>Lorem ipsum test8 partie 1</p>, <p>Partie 2</p>,<p>Partie 3</p>]
     },
     {
       genres: [
         paranormal,
         mystere
       ],
+      tempsLecture: 10,
+      date: "8/01/2021",
+      description:"L'année dernière, une série d'événements macabres a frappé une petite famille d'Italie. Rien n'a permis d'élucider le mystère.",
+      url:"/stories/9",
+      title:"Naturel",
+      image:"/assets/stories/nature.png",
+      texte:[<p>Lorem ipsum test9 partie 1</p>, <p>Partie 2</p>,<p>Partie 3</p>]
+    },
+    {
+      genres: [
+        psychologique
+      ],
       tempsLecture: 5,
-      date: "10/02/2021",
-      description:"Lorem ipsum dolores ombrage Lorem ipsum dolores ombrage Lorem ipsum dolores ombrage Lorem ipsum dolores ombrage Lorem ipsum dolores ombrage Lorem ipsum dolores ombrage Lorem ipsum dolores ombrage ",
-      url:"/stories/1",
-      title:"Easy Street",
-      image:"/assets/stories/easystreet.png",
-      texte:[<p>Lorem ipsum test7 partie 1</p>, <p>Partie 2</p>,<p>Partie 3</p>]
+      date: "1/01/2021",
+      description:"Le gouvernement veut nous contrôler. Nous devons agir.",
+      url:"/stories/10",
+      title:"Distanciation sociale",
+      image:"/assets/stories/distanciation.png",
+      texte:[<p>Lorem ipsum test10 partie 1</p>, <p>Partie 2</p>,<p>Partie 3</p>]
     }
   ];
 
