@@ -117,11 +117,11 @@ export default function StoryCard({genres, description, title, tempsLecture, url
             <CardActions disableSpacing>
                 <Grid container className={classes.actionsContainer}>
                     <Grid item xs={6}>
-                        <IconButton aria-label="add to favorites">
-                            <Favorite />
+                        <IconButton aria-label="add to favorites" disabled>
+                            <Favorite/>
                         </IconButton>
-                        <IconButton aria-label="share">
-                            <Share />
+                        <IconButton aria-label="share" disabled>
+                            <Share/>
                         </IconButton>
                     </Grid>
                     <Grid item container className={classes.linkContainer} xs={6}>
