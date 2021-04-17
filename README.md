@@ -17,14 +17,14 @@ J'ai également découvert l'utilisation de Node.JS et de Material-UI au cours d
 J'ai initialisé mon projet avec Create React App que j'ai utilisé dans mon terminal Node.js intégré à VS Code (https://github.com/facebook/create-react-app). Après la première prise en main de React, j'ai également installé Material-UI, librairie React.
 
 ## Fonctionnalités à intégrer :
-- Filtrage des histoires par genre au clic sur les boutons
-- Changement de style du bouton (outlined > contained) au clic
-- Ajout de dynamisme grâce à des animations JS
-- Créer des histoires à choix (comme https://morale.arte.tv/)
-- Back-office pour créer les histoires facilement + stylisation
-- Musiques d'ambiance
-- Version audio des histoires
-- Possibilité pour les utilisateurs de proposer des histoires (par mail ? ou directement grâce à un formulaire qui envoie les données sur une page Suggestions)
+[X] Filtrage des histoires par genre au clic sur les boutons
+[ ] Changement de style du bouton (outlined > contained) au clic
+[ ] Ajout de dynamisme grâce à des animations JS
+[ ] Créer des histoires à choix (comme https://morale.arte.tv/)
+[ ] Back-office pour créer les histoires facilement + stylisation
+[ ] Musiques d'ambiance
+[ ] Version audio des histoires
+[ ] Possibilité pour les utilisateurs de proposer des histoires (par mail ? ou directement grâce à un formulaire qui envoie les données sur une page Suggestions)
 
 ## Architecture
 
