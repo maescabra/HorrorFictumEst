@@ -1,6 +1,7 @@
-Horror Fictum Est
+# Horror Fictum Est
 
-Projet réalisé en React pour le S4 du DUT MMI
+Projet réalisé en React pour le S4 du DUT MMI.
+Projet maintenu.
 
 ## Génèse du projet
 
